@@ -24,8 +24,8 @@ The latest version of the original repository (0.1.77) lacks support for the HmI
 If you can't or don't want to migrate to the new integration but need support for the device, you may host the patched devicetypes/misc.py-file on a local webserver or directly load from github and configure the "Run On Startup.d"-integration (https://community.home-assistant.io/t/run-on-startup-d/271008) to run a startup-job for your homeassistant docker container like e.g.: 
 
     >>> echo "This script is executed in the homeassistant container"; 
-    >>> # Try to download the patched version of pyhomematic from local http-server
-    >>> wget -T 5 https://raw.githubusercontent.com/derco0n/pyhomematic/master/pyhomematic/devicetypes/misc.py -O /usr/local/lib/python3.10/site-packages/pyhomematic/devicetypes/misc.py
+    >>> # Try to download the patched version of pyhomematic
+    >>> wget -T 10 https://raw.githubusercontent.com/derco0n/pyhomematic/master/pyhomematic/devicetypes/misc.py -O /usr/local/lib/python3.10/site-packages/pyhomematic/devicetypes/misc.py
     >>> env;
 
 pyhomematic
